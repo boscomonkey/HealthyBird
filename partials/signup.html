@@ -1,0 +1,66 @@
+<!--
+<h2>Login Page</h2>
+
+<form>
+    <label>
+        <span>email</span>
+        <input type="text" ng-model="email" />
+    </label>
+    <label>
+        <span>password</span>
+        <input type="password" ng-model="pass" />
+    </label>
+    <label ng-cloak ng-show="createMode">
+        <span>confirm pass</span>
+        <input type="password" ng-model="confirm" />
+    </label>
+    <button ng-click="login()" ng-hide="createMode">Log In</button>
+    <button ng-click="createMode = true" ng-hide="createMode">Register</button>
+    <button ng-cloak ng-show="createMode" ng-click="createAccount()">Create Account</button>
+    <button ng-cloak ng-show="createMode" ng-click="createMode = false">Cancel</button>
+
+    <p ng-show="err" class="error">{{err}}</p>
+</form>
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2 class="trendingTitle">Create A New Account</h2>
+            <h4 class="accountSubTitle">Join the party and co-invest in art from all over the world. Already have an account? <a class="otherFormInfoLinks" href="#/login">Sign in here</a>.</h4>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- show a piece of art as a square and clickable for full -->
+        <div class="col-sm-4 col-sm-offset-1 social-col">
+            <div class="socialLoginInfo">
+                Join the party quickly with your facebook account!
+            </div>
+            <button ng-click="facebookLogin()" class="btn btn-social btn-fb">
+                <div class="btn-socialIcon">
+                    <i class="fa fa-facebook"></i>
+                </div> FACEBOOK
+            </button>
+            <div class="buttonSpacer"></div>
+        </div>
+        <div class="col-sm-6">
+            <form role="form" class="form-border-left">
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Full Name</label>
+                    <input type="name" class="form-control" id="nameInput" placeholder="Enter name" ng-model="name">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="email">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="pass">
+                </div>
+                <p ng-show="err" class="error">{{err}}</p>
+                <button ng-click="createAccount()" class="btn btn-artprty">SIGN UP FREE</button>
+            </form>
+        </div>
+    </div>
+</div>
