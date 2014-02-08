@@ -500,7 +500,7 @@ span.rotated {
     wid
 }
 
-.btn-objective {
+.btn-objective, .btn-objective:focus {
     width:200px;
     border:1px solid #627BC1;
     background-color:white;
@@ -511,7 +511,7 @@ span.rotated {
     -webkit-transition: background-color 0.25s;
 }
 
-.btn-objective:hover, .btn-objective:focus {
+.btn-objective:hover {
     background-color:#627BC1;
     color:white;
 }
