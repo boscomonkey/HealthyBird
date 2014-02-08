@@ -502,9 +502,9 @@ span.rotated {
 
 .btn-objective {
     width:200px;
-    border:1px solid rgba(245, 145, 84, 1);
+    border:1px solid #627BC1;
     background-color:white;
-    color:rgba(245, 145, 84, 1);
+    color:#627BC1;
     transition: color 0.25s;
     -webkit-transition: color 0.25s;
     transition: background-color 0.25s;
@@ -512,6 +512,25 @@ span.rotated {
 }
 
 .btn-objective:hover, .btn-objective:focus {
-    background-color:rgba(245, 145, 84, 1);
+    background-color:#627BC1;
     color:white;
+}
+
+.btnHolder {
+    position:fixed;
+    bottom:40px;
+    text-align:center;
+    width:100%;
+}
+
+.btn-get-started, .btn-get-started:focus {
+    width:200px;
+    height:50px;
+    color:white;
+    background-color:#627BC1;
+}
+
+.btn-get-started:hover {
+    color:white;
+    background-color:#465FA2;
 }
