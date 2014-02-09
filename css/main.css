@@ -555,3 +555,8 @@ span.rotated {
     text-align:center;
     color:white;
 }
+
+.formLabelHealthyBird {
+    color:#444;
+    font-size:16px;
+}
