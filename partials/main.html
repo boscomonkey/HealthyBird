@@ -1,5 +1,5 @@
 <div class="backContainer">
-    <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout</a>
+     <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout {{user.attributes.username}}</a>
 </div>
 
 <div class="container">
@@ -20,5 +20,8 @@
                 <button class="btn btn-lg btn-objective">Spend Points</button>
             </a>
         </div>
+    </div>
+    <div class="pointsHolder">
+        <h2>Points: {{user.attributes.points}}</h2>
     </div>
 </div>

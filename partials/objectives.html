@@ -1,6 +1,6 @@
 <div class="backContainer">
     <a href="#/main" style="color:white;">Back</a>
-    <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout</a>
+    <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout {{user.attributes.username}}</a>
 </div>
 
 <div class="container">
@@ -12,11 +12,6 @@
     </div>
     <div class="objectivesHolder">
         <div class="objectiveHolder">
-            <a ng-href="#/objectives/lose-weight">
-                <button class="btn btn-lg btn-objective">Lose Weight</button>
-            </a>
-        </div>
-        <div class="objectiveHolder">
             <a href="#/objectives/excercise-more">
                 <button class="btn btn-lg btn-objective">Exercise More</button>
             </a>
@@ -26,5 +21,8 @@
                 <button class="btn btn-lg btn-objective">Eat Healthy</button>
             </a>
         </div>
+    </div>
+    <div class="pointsHolder">
+        <h2>Points: {{user.attributes.points}}</h2>
     </div>
 </div>
