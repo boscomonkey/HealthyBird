@@ -14,15 +14,28 @@ angular.module('myApp.controllers', [])
 
     .controller('SingleObjectiveCtrl', ['$scope', '$rootScope', '$routeParams', '$location', function($scope, $rootScope, $routeParams, $location) {
         $scope.user = Parse.User.current();
+        var exercises = [ 
+            {objective:"Go run in place for 1 min! 20 points",points:20},  
+            {objective:"Go do 12 jumping jacks! 15 points",points:15}
+        ];
+        
+        var foods = [ 
+            {objective:"Eat edamame from Whole Foods! 5 points",points:5},  
+            {objective:"Get a Chicken Salad from applebees! 20 points",points:20}
+        ];
+        
         if($routeParams.objectiveId == "excercise-more") {
+            var ex = Math.floor(Math.random() * exercises.length + 1) - 1;
+            var curEx = exercises[ex];
             $scope.objectiveName = "Excercise!";
-            $scope.objective = "Go do 12 jumping jacks! 20 points";
-            $scope.points = 20;
+            $scope.objective = curEx.objective;
+            $scope.points = curEx.points;
         }
         else if($routeParams.objectiveId == "eat-healthy") {
-            $scope.objectiveName = "Eat Healthy!";
-            $scope.objective = "Go buy Bananas at Whole Foods! 5 points";
-            $scope.points = 5;
+            var ex = Math.floor(Math.random() * exercises.length + 1) - 1;
+            var curFood = foods[ex];
+            $scope.objective = curFood.objective;
+            $scope.points = curFood.points;
         }
         
         $scope.completeTask = function() {
