@@ -2,24 +2,75 @@
     <a href="#/objectives" style="color:white;">Back</a>
     <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout {{user.attributes.username}}</a>
 </div>
-<div class="container">
+<div class="container exercise-list">
     <!--
     <div style="text-align:center;color:white;">
         <h1>{{ objectiveName }}</h1>
     </div>
-    -->
+
     <blockquote class="oval-speech-border" style="width: 200px;height: 92px;">
         <p style="font-size:14px;">{{ objective }}</p>
     </blockquote>
     <div style="text-align:center;">
         <img src="./img/bird.png"/>
     </div>
-    <!--
+
+    <div class="objectiveHolder" style="margin-top:40px;">
+        <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+    </div>
+
     <div style="text-align:center;">
         <iframe width="280" height="165" ng-src="{{ video }}" frameborder="0" allowfullscreen></iframe>
     </div>
     -->
-    <div class="objectiveHolder" style="margin-top:40px;">
-        <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+
+    <div class="singleExercise">
+      <p><img src="/media/1.twisting-knee-lift.png" class="thumbnail" /></p>
+      <blockquote class="oval-speech-border" style="width: 200px;height: 92px;">
+          <p style="font-size:14px;">Cross Leg Lifts - works legs &amp; abs. 20 points.</p>
+      </blockquote>
+      <div class="objectiveHolder" style="margin-top:40px;">
+          <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+      </div>
+    </div>
+
+    <div class="singleExercise">
+      <p><img src="/media/2.jumping-jacks.png" class="thumbnail" /></p>
+      <blockquote class="oval-speech-border" style="width: 200px;height: 92px;">
+          <p style="font-size:14px;">Jumping Jacks - helps you move better. 20 points.</p>
+      </blockquote>
+      <div class="objectiveHolder" style="margin-top:40px;">
+          <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+      </div>
+    </div>
+
+    <div class="singleExercise">
+      <p><img src="/media/3.humming-bird.png" class="thumbnail" /></p>
+      <blockquote class="oval-speech-border" style="width: 200px;height: 92px;">
+          <p style="font-size:14px;">Shoulder Circles - strengthens shoulders. 20 points.</p>
+      </blockquote>
+      <div class="objectiveHolder" style="margin-top:40px;">
+          <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+      </div>
+    </div>
+
+    <div class="singleExercise">
+      <p><img src="/media/4.squat.png" class="thumbnail" /></p>
+      <blockquote class="oval-speech-border" style="width: 200px;height: 92px;">
+          <p style="font-size:14px;">Squats - gets blood pumping. 20 points.</p>
+      </blockquote>
+      <div class="objectiveHolder" style="margin-top:40px;">
+          <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+      </div>
+    </div>
+
+    <div class="singleExercise">
+      <p><img src="/media/5.jogging-in-place.png" class="thumbnail" /></p>
+      <blockquote class="oval-speech-border" style="width: 200px;height: 92px;">
+          <p style="font-size:14px;">Running In Place - increases metabolism. 20 points.</p>
+      </blockquote>
+      <div class="objectiveHolder" style="margin-top:40px;">
+          <button ng-click="completeTask()"class="btn btn-lg btn-healthybird">Complete!</button>
+      </div>
     </div>
 </div>
