@@ -25,6 +25,16 @@ angular.module('myApp.routes', ['ngRoute'])
          controller: 'SingleObjectiveCtrl'
       });
 
+      $routeProvider.when('/main', {
+         templateUrl: 'partials/main.html',
+         controller: 'MainCtrl'
+      });
+
+      $routeProvider.when('/store', {
+         templateUrl: 'partials/store.html',
+         controller: 'StoreCtrl'
+      });
+
       $routeProvider.when('/chat', {
          templateUrl: 'partials/chat.html',
          controller: 'ChatCtrl'

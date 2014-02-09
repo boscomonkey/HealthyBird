@@ -534,3 +534,10 @@ span.rotated {
     color:white;
     background-color:#465FA2;
 }
+
+.backContainer {
+    background-color:#627BC1;
+    color:white;
+    height:40px;
+    padding:10px;
+}

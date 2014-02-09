@@ -21,3 +21,13 @@ angular.module('myApp.controllers', [])
         //stuff
         
     }])
+
+    .controller('MainCtrl', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $location) {
+        //stuff
+        
+    }])
+
+    .controller('StoreCtrl', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $location) {
+        //stuff
+        
+    }])
