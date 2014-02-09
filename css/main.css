@@ -2,6 +2,11 @@ body, html {
     height: 100%;
 }
 
+body {
+    background-image:url('../img/HealthyBirdBg.png');
+    background-size:cover;
+}
+
 .mainTitle {
     text-align:left;
     font-size:18px;
